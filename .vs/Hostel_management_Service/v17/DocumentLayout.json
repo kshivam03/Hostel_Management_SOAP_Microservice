@@ -1,0 +1,145 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Hostel_Management_Final\\Hostel_Management\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B13CDF71-9404-4AD0-98A4-3218BD8850FE}|HM_Service\\HM_Service.csproj|e:\\hostel_management_final\\hostel_management\\hm_service\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B13CDF71-9404-4AD0-98A4-3218BD8850FE}|HM_Service\\HM_Service.csproj|solutionrelative:hm_service\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13CDF71-9404-4AD0-98A4-3218BD8850FE}|HM_Service\\HM_Service.csproj|e:\\hostel_management_final\\hostel_management\\hm_service\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B13CDF71-9404-4AD0-98A4-3218BD8850FE}|HM_Service\\HM_Service.csproj|solutionrelative:hm_service\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13CDF71-9404-4AD0-98A4-3218BD8850FE}|HM_Service\\HM_Service.csproj|e:\\hostel_management_final\\hostel_management\\hm_service\\istaffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B13CDF71-9404-4AD0-98A4-3218BD8850FE}|HM_Service\\HM_Service.csproj|solutionrelative:hm_service\\istaffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13CDF71-9404-4AD0-98A4-3218BD8850FE}|HM_Service\\HM_Service.csproj|e:\\hostel_management_final\\hostel_management\\hm_service\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B13CDF71-9404-4AD0-98A4-3218BD8850FE}|HM_Service\\HM_Service.csproj|solutionrelative:hm_service\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C70BAFD-7CCD-4746-ACCF-35496CD07CA7}|HM_Host\\HM_Host.csproj|e:\\hostel_management_final\\hostel_management\\hm_host\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C70BAFD-7CCD-4746-ACCF-35496CD07CA7}|HM_Host\\HM_Host.csproj|solutionrelative:hm_host\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13CDF71-9404-4AD0-98A4-3218BD8850FE}|HM_Service\\HM_Service.csproj|E:\\Hostel_Management_Final\\Hostel_Management\\hm_service\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{B13CDF71-9404-4AD0-98A4-3218BD8850FE}|HM_Service\\HM_Service.csproj|solutionrelative:hm_service\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C70BAFD-7CCD-4746-ACCF-35496CD07CA7}|HM_Host\\HM_Host.csproj|E:\\Hostel_Management_Final\\Hostel_Management\\hm_host\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5C70BAFD-7CCD-4746-ACCF-35496CD07CA7}|HM_Host\\HM_Host.csproj|solutionrelative:hm_host\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "E:\\Hostel_Management_Final\\Hostel_Management\\HM_Service\\StudentService.cs",
+              "RelativeDocumentMoniker": "HM_Service\\StudentService.cs",
+              "ToolTip": "E:\\Hostel_Management_Final\\Hostel_Management\\HM_Service\\StudentService.cs",
+              "RelativeToolTip": "HM_Service\\StudentService.cs",
+              "ViewState": "AQIAAD4BAAAAAAAAAAAIwFQBAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T23:39:40.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IStaffService.cs",
+              "DocumentMoniker": "E:\\Hostel_Management_Final\\Hostel_Management\\HM_Service\\IStaffService.cs",
+              "RelativeDocumentMoniker": "HM_Service\\IStaffService.cs",
+              "ToolTip": "E:\\Hostel_Management_Final\\Hostel_Management\\HM_Service\\IStaffService.cs",
+              "RelativeToolTip": "HM_Service\\IStaffService.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwBsAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T23:39:06.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StaffService.cs",
+              "DocumentMoniker": "E:\\Hostel_Management_Final\\Hostel_Management\\HM_Service\\StaffService.cs",
+              "RelativeDocumentMoniker": "HM_Service\\StaffService.cs",
+              "ToolTip": "E:\\Hostel_Management_Final\\Hostel_Management\\HM_Service\\StaffService.cs",
+              "RelativeToolTip": "HM_Service\\StaffService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAcwDwAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T23:38:07.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IStudentService.cs",
+              "DocumentMoniker": "E:\\Hostel_Management_Final\\Hostel_Management\\HM_Service\\IStudentService.cs",
+              "RelativeDocumentMoniker": "HM_Service\\IStudentService.cs",
+              "ToolTip": "E:\\Hostel_Management_Final\\Hostel_Management\\HM_Service\\IStudentService.cs",
+              "RelativeToolTip": "HM_Service\\IStudentService.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwCAAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T23:25:02.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\Hostel_Management_Final\\Hostel_Management\\HM_Host\\Form1.cs",
+              "RelativeDocumentMoniker": "HM_Host\\Form1.cs",
+              "ToolTip": "E:\\Hostel_Management_Final\\Hostel_Management\\HM_Host\\Form1.cs",
+              "RelativeToolTip": "HM_Host\\Form1.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAYwDMAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T15:30:51.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.config",
+              "DocumentMoniker": "E:\\Hostel_Management_Final\\Hostel_Management\\HM_Service\\App.config",
+              "RelativeDocumentMoniker": "HM_Service\\App.config",
+              "ToolTip": "E:\\Hostel_Management_Final\\Hostel_Management\\HM_Service\\App.config",
+              "RelativeToolTip": "HM_Service\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-03-31T15:30:45.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.config",
+              "DocumentMoniker": "E:\\Hostel_Management_Final\\Hostel_Management\\HM_Host\\App.config",
+              "RelativeDocumentMoniker": "HM_Host\\App.config",
+              "ToolTip": "E:\\Hostel_Management_Final\\Hostel_Management\\HM_Host\\App.config",
+              "RelativeToolTip": "HM_Host\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-03-31T15:30:35.815Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

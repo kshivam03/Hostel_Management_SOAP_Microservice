@@ -1,0 +1,35 @@
+D:\asp.net project\Hostel_management_Service\HM_Service\bin\Debug\HM_Service.dll.config
+D:\asp.net project\Hostel_management_Service\HM_Service\bin\Debug\HM_Service.dll
+D:\asp.net project\Hostel_management_Service\HM_Service\bin\Debug\HM_Service.pdb
+D:\asp.net project\Hostel_management_Service\HM_Service\obj\Debug\HM_Service.csproj.AssemblyReference.cache
+D:\asp.net project\Hostel_management_Service\HM_Service\obj\Debug\HM_Service.csproj.CoreCompileInputs.cache
+D:\asp.net project\Hostel_management_Service\HM_Service\obj\Debug\HM_Service.dll
+D:\asp.net project\Hostel_management_Service\HM_Service\obj\Debug\HM_Service.pdb
+C:\Users\Legion\Project\Hostel_Management\HM_Service\bin\Debug\HM_Service.dll.config
+C:\Users\Legion\Project\Hostel_Management\HM_Service\bin\Debug\HM_Service.dll
+C:\Users\Legion\Project\Hostel_Management\HM_Service\bin\Debug\HM_Service.pdb
+C:\Users\Legion\Project\Hostel_Management\HM_Service\obj\Debug\HM_Service.csproj.AssemblyReference.cache
+C:\Users\Legion\Project\Hostel_Management\HM_Service\obj\Debug\HM_Service.csproj.CoreCompileInputs.cache
+C:\Users\Legion\Project\Hostel_Management\HM_Service\obj\Debug\HM_Service.dll
+C:\Users\Legion\Project\Hostel_Management\HM_Service\obj\Debug\HM_Service.pdb
+E:\Hostel_Management\HM_Service\bin\Debug\HM_Service.dll.config
+E:\Hostel_Management\HM_Service\bin\Debug\HM_Service.dll
+E:\Hostel_Management\HM_Service\bin\Debug\HM_Service.pdb
+E:\Hostel_Management\HM_Service\obj\Debug\HM_Service.csproj.AssemblyReference.cache
+E:\Hostel_Management\HM_Service\obj\Debug\HM_Service.csproj.CoreCompileInputs.cache
+E:\Hostel_Management\HM_Service\obj\Debug\HM_Service.dll
+E:\Hostel_Management\HM_Service\obj\Debug\HM_Service.pdb
+C:\Users\Legion\Desktop\github\HM_Service\bin\Debug\HM_Service.dll.config
+C:\Users\Legion\Desktop\github\HM_Service\bin\Debug\HM_Service.dll
+C:\Users\Legion\Desktop\github\HM_Service\bin\Debug\HM_Service.pdb
+C:\Users\Legion\Desktop\github\HM_Service\obj\Debug\HM_Service.csproj.AssemblyReference.cache
+C:\Users\Legion\Desktop\github\HM_Service\obj\Debug\HM_Service.csproj.CoreCompileInputs.cache
+C:\Users\Legion\Desktop\github\HM_Service\obj\Debug\HM_Service.dll
+C:\Users\Legion\Desktop\github\HM_Service\obj\Debug\HM_Service.pdb
+E:\Hostel_Management_Final\Hostel_Management\HM_Service\bin\Debug\HM_Service.dll.config
+E:\Hostel_Management_Final\Hostel_Management\HM_Service\bin\Debug\HM_Service.dll
+E:\Hostel_Management_Final\Hostel_Management\HM_Service\bin\Debug\HM_Service.pdb
+E:\Hostel_Management_Final\Hostel_Management\HM_Service\obj\Debug\HM_Service.csproj.AssemblyReference.cache
+E:\Hostel_Management_Final\Hostel_Management\HM_Service\obj\Debug\HM_Service.csproj.CoreCompileInputs.cache
+E:\Hostel_Management_Final\Hostel_Management\HM_Service\obj\Debug\HM_Service.dll
+E:\Hostel_Management_Final\Hostel_Management\HM_Service\obj\Debug\HM_Service.pdb

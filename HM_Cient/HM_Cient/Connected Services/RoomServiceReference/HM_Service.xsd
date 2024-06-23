@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/HM_Service" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/HM_Service" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Student">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateOfBirth" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateOfJoining" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoomID" type="xs:int" />
+      <xs:element minOccurs="0" name="StudentId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Student" nillable="true" type="tns:Student" />
+  <xs:complexType name="Staff">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateOfBirth" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateOfJoining" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Salary" type="xs:int" />
+      <xs:element minOccurs="0" name="StaffId" type="xs:int" />
+      <xs:element minOccurs="0" name="WorkType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Staff" nillable="true" type="tns:Staff" />
+  <xs:complexType name="Fees">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FeesId" type="xs:int" />
+      <xs:element minOccurs="0" name="PaidAmount" type="xs:int" />
+      <xs:element minOccurs="0" name="PaymentDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="StudentId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Fees" nillable="true" type="tns:Fees" />
+  <xs:complexType name="Room">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BedVacancy" type="xs:int" />
+      <xs:element minOccurs="0" name="RoomId" type="xs:int" />
+      <xs:element minOccurs="0" name="RoomType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Room" nillable="true" type="tns:Room" />
+</xs:schema>

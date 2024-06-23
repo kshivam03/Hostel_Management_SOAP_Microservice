@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HM_Service", "HM_Service\HM_Service.csproj", "{B13CDF71-9404-4AD0-98A4-3218BD8850FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HM_Host", "HM_Host\HM_Host.csproj", "{5C70BAFD-7CCD-4746-ACCF-35496CD07CA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B13CDF71-9404-4AD0-98A4-3218BD8850FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B13CDF71-9404-4AD0-98A4-3218BD8850FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B13CDF71-9404-4AD0-98A4-3218BD8850FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B13CDF71-9404-4AD0-98A4-3218BD8850FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C70BAFD-7CCD-4746-ACCF-35496CD07CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C70BAFD-7CCD-4746-ACCF-35496CD07CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C70BAFD-7CCD-4746-ACCF-35496CD07CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C70BAFD-7CCD-4746-ACCF-35496CD07CA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDD07A93-0EA0-4389-AF20-68CA4940584D}
+	EndGlobalSection
+EndGlobal

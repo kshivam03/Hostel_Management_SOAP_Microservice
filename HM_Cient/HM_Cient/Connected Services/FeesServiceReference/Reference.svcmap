@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="dcee0ab3-7da6-4343-991f-7728d98309c3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://localhost:8003/FeesTcpBinding/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="ad24165a-154a-4dec-a553-22c55e8e48ad" SourceId="1" SourceUrl="net.tcp://localhost:8003/FeesTcpBinding/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="bbd99395-066f-4be7-bcfa-a680323a097b" SourceId="1" SourceUrl="net.tcp://localhost:8003/FeesTcpBinding/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="6fba6efa-0563-41e1-bcfe-ee65bdbd69ef" SourceId="1" SourceUrl="net.tcp://localhost:8003/FeesTcpBinding/mex" />
+    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="05447566-7e1b-4379-950e-e35941f44b6b" SourceId="1" SourceUrl="net.tcp://localhost:8003/FeesTcpBinding/mex" />
+    <MetadataFile FileName="HM_Service.xsd" MetadataType="Schema" ID="574f713c-abb0-4616-a88f-36d319962b25" SourceId="1" SourceUrl="net.tcp://localhost:8003/FeesTcpBinding/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

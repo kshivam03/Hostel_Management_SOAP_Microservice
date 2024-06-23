@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="9dd83fd1-be84-4144-ac53-9cdf69d8ba55" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://localhost:8002/RoomTcpBinding/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="14a9e666-4035-4bdf-8b34-9a23692b4912" SourceId="1" SourceUrl="net.tcp://localhost:8002/RoomTcpBinding/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="446ab996-e464-403e-a84f-63778bf4bd04" SourceId="1" SourceUrl="net.tcp://localhost:8002/RoomTcpBinding/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="84e22834-751c-4252-aded-92f1d4accae9" SourceId="1" SourceUrl="net.tcp://localhost:8002/RoomTcpBinding/mex" />
+    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="f902e5e0-f8d3-4084-b681-e7a693d5fbe8" SourceId="1" SourceUrl="net.tcp://localhost:8002/RoomTcpBinding/mex" />
+    <MetadataFile FileName="HM_Service.xsd" MetadataType="Schema" ID="2faf5c14-abf7-410c-8ff6-0fdf2ce5bd0d" SourceId="1" SourceUrl="net.tcp://localhost:8002/RoomTcpBinding/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="63a36281-7d1c-4385-8052-15f6e2b67497" SourceId="1" SourceUrl="net.tcp://localhost:8002/RoomTcpBinding/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

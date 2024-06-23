@@ -1,0 +1,767 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="StudentService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IStudentService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256>
+                </sp:Basic256>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict>
+                </sp:Strict>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="NetTcpBinding_IStaffService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256>
+                </sp:Basic256>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict>
+                </sp:Strict>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="NetTcpBinding_IFeesService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256>
+                </sp:Basic256>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict>
+                </sp:Strict>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="NetTcpBinding_IRoomService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256>
+                </sp:Basic256>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict>
+                </sp:Strict>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/HM_Service" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IStudentService_GetAllStudents_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllStudents" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_GetAllStudents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllStudentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_GetStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStudent" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_GetStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_AddStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddStudent" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_AddStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_UpdateStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStudent" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_UpdateStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_DeleteStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStudent" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_DeleteStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_PendingFees_InputMessage">
+    <wsdl:part name="parameters" element="tns:PendingFees" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_PendingFees_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PendingFeesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_NoOfStudents_InputMessage">
+    <wsdl:part name="parameters" element="tns:NoOfStudents" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_NoOfStudents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NoOfStudentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_CountStudentsWithPendingFees_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountStudentsWithPendingFees" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_CountStudentsWithPendingFees_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountStudentsWithPendingFeesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_GetStudentsByFirstName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStudentsByFirstName" />
+  </wsdl:message>
+  <wsdl:message name="IStudentService_GetStudentsByFirstName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStudentsByFirstNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStaffService_GetAllStaffs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllStaffs" />
+  </wsdl:message>
+  <wsdl:message name="IStaffService_GetAllStaffs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllStaffsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStaffService_GetStaff_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStaff" />
+  </wsdl:message>
+  <wsdl:message name="IStaffService_GetStaff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStaffResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStaffService_AddStaff_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddStaff" />
+  </wsdl:message>
+  <wsdl:message name="IStaffService_AddStaff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddStaffResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStaffService_DeleteStaff_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStaff" />
+  </wsdl:message>
+  <wsdl:message name="IStaffService_DeleteStaff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStaffResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStaffService_UpdateStaff_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStaff" />
+  </wsdl:message>
+  <wsdl:message name="IStaffService_UpdateStaff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStaffResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStaffService_NoOfStaffs_InputMessage">
+    <wsdl:part name="parameters" element="tns:NoOfStaffs" />
+  </wsdl:message>
+  <wsdl:message name="IStaffService_NoOfStaffs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NoOfStaffsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFeesService_GetAllFees_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllFees" />
+  </wsdl:message>
+  <wsdl:message name="IFeesService_GetAllFees_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllFeesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFeesService_StudentAllFees_InputMessage">
+    <wsdl:part name="parameters" element="tns:StudentAllFees" />
+  </wsdl:message>
+  <wsdl:message name="IFeesService_StudentAllFees_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StudentAllFeesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFeesService_AddFees_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddFees" />
+  </wsdl:message>
+  <wsdl:message name="IFeesService_AddFees_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddFeesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_GetAllRooms_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRooms" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_GetAllRooms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRoomsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_GetRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoom" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_GetRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_AddRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddRoom" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_AddRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_UpdateRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRoom" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_UpdateRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_DeleteRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRoom" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_DeleteRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_GetVacantRoomIds_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVacantRoomIds" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_GetVacantRoomIds_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVacantRoomIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_GetVacantRoomIdsWithAC_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVacantRoomIdsWithAC" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_GetVacantRoomIdsWithAC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVacantRoomIdsWithACResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_GetVacantRoomIdsWithNonAC_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVacantRoomIdsWithNonAC" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_GetVacantRoomIdsWithNonAC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVacantRoomIdsWithNonACResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_NoOfRooms_InputMessage">
+    <wsdl:part name="parameters" element="tns:NoOfRooms" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_NoOfRooms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NoOfRoomsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_GetTotalVacantRooms_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalVacantRooms" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_GetTotalVacantRooms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalVacantRoomsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_GetStudentsInRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStudentsInRoom" />
+  </wsdl:message>
+  <wsdl:message name="IRoomService_GetStudentsInRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStudentsInRoomResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IStudentService">
+    <wsdl:operation name="GetAllStudents">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/GetAllStudents" message="tns:IStudentService_GetAllStudents_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/GetAllStudentsResponse" message="tns:IStudentService_GetAllStudents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/GetStudent" message="tns:IStudentService_GetStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/GetStudentResponse" message="tns:IStudentService_GetStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/AddStudent" message="tns:IStudentService_AddStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/AddStudentResponse" message="tns:IStudentService_AddStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/UpdateStudent" message="tns:IStudentService_UpdateStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/UpdateStudentResponse" message="tns:IStudentService_UpdateStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/DeleteStudent" message="tns:IStudentService_DeleteStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/DeleteStudentResponse" message="tns:IStudentService_DeleteStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PendingFees">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/PendingFees" message="tns:IStudentService_PendingFees_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/PendingFeesResponse" message="tns:IStudentService_PendingFees_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NoOfStudents">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/NoOfStudents" message="tns:IStudentService_NoOfStudents_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/NoOfStudentsResponse" message="tns:IStudentService_NoOfStudents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CountStudentsWithPendingFees">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/CountStudentsWithPendingFees" message="tns:IStudentService_CountStudentsWithPendingFees_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/CountStudentsWithPendingFeesResponse" message="tns:IStudentService_CountStudentsWithPendingFees_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentsByFirstName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudentService/GetStudentsByFirstName" message="tns:IStudentService_GetStudentsByFirstName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudentService/GetStudentsByFirstNameResponse" message="tns:IStudentService_GetStudentsByFirstName_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IStaffService">
+    <wsdl:operation name="GetAllStaffs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStaffService/GetAllStaffs" message="tns:IStaffService_GetAllStaffs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStaffService/GetAllStaffsResponse" message="tns:IStaffService_GetAllStaffs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStaff">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStaffService/GetStaff" message="tns:IStaffService_GetStaff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStaffService/GetStaffResponse" message="tns:IStaffService_GetStaff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddStaff">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStaffService/AddStaff" message="tns:IStaffService_AddStaff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStaffService/AddStaffResponse" message="tns:IStaffService_AddStaff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStaff">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStaffService/DeleteStaff" message="tns:IStaffService_DeleteStaff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStaffService/DeleteStaffResponse" message="tns:IStaffService_DeleteStaff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStaff">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStaffService/UpdateStaff" message="tns:IStaffService_UpdateStaff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStaffService/UpdateStaffResponse" message="tns:IStaffService_UpdateStaff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NoOfStaffs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStaffService/NoOfStaffs" message="tns:IStaffService_NoOfStaffs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStaffService/NoOfStaffsResponse" message="tns:IStaffService_NoOfStaffs_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IFeesService">
+    <wsdl:operation name="GetAllFees">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFeesService/GetAllFees" message="tns:IFeesService_GetAllFees_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFeesService/GetAllFeesResponse" message="tns:IFeesService_GetAllFees_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StudentAllFees">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFeesService/StudentAllFees" message="tns:IFeesService_StudentAllFees_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFeesService/StudentAllFeesResponse" message="tns:IFeesService_StudentAllFees_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddFees">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFeesService/AddFees" message="tns:IFeesService_AddFees_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFeesService/AddFeesResponse" message="tns:IFeesService_AddFees_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IRoomService">
+    <wsdl:operation name="GetAllRooms">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoomService/GetAllRooms" message="tns:IRoomService_GetAllRooms_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoomService/GetAllRoomsResponse" message="tns:IRoomService_GetAllRooms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoomService/GetRoom" message="tns:IRoomService_GetRoom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoomService/GetRoomResponse" message="tns:IRoomService_GetRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddRoom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoomService/AddRoom" message="tns:IRoomService_AddRoom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoomService/AddRoomResponse" message="tns:IRoomService_AddRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRoom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoomService/UpdateRoom" message="tns:IRoomService_UpdateRoom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoomService/UpdateRoomResponse" message="tns:IRoomService_UpdateRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRoom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoomService/DeleteRoom" message="tns:IRoomService_DeleteRoom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoomService/DeleteRoomResponse" message="tns:IRoomService_DeleteRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVacantRoomIds">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoomService/GetVacantRoomIds" message="tns:IRoomService_GetVacantRoomIds_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoomService/GetVacantRoomIdsResponse" message="tns:IRoomService_GetVacantRoomIds_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVacantRoomIdsWithAC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoomService/GetVacantRoomIdsWithAC" message="tns:IRoomService_GetVacantRoomIdsWithAC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoomService/GetVacantRoomIdsWithACResponse" message="tns:IRoomService_GetVacantRoomIdsWithAC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVacantRoomIdsWithNonAC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoomService/GetVacantRoomIdsWithNonAC" message="tns:IRoomService_GetVacantRoomIdsWithNonAC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoomService/GetVacantRoomIdsWithNonACResponse" message="tns:IRoomService_GetVacantRoomIdsWithNonAC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NoOfRooms">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoomService/NoOfRooms" message="tns:IRoomService_NoOfRooms_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoomService/NoOfRoomsResponse" message="tns:IRoomService_NoOfRooms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalVacantRooms">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoomService/GetTotalVacantRooms" message="tns:IRoomService_GetTotalVacantRooms_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoomService/GetTotalVacantRoomsResponse" message="tns:IRoomService_GetTotalVacantRooms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentsInRoom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoomService/GetStudentsInRoom" message="tns:IRoomService_GetStudentsInRoom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoomService/GetStudentsInRoomResponse" message="tns:IRoomService_GetStudentsInRoom_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IStudentService" type="tns:IStudentService">
+    <wsp:PolicyReference URI="#NetTcpBinding_IStudentService_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="GetAllStudents">
+      <soap12:operation soapAction="http://tempuri.org/IStudentService/GetAllStudents" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudent">
+      <soap12:operation soapAction="http://tempuri.org/IStudentService/GetStudent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddStudent">
+      <soap12:operation soapAction="http://tempuri.org/IStudentService/AddStudent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStudent">
+      <soap12:operation soapAction="http://tempuri.org/IStudentService/UpdateStudent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStudent">
+      <soap12:operation soapAction="http://tempuri.org/IStudentService/DeleteStudent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PendingFees">
+      <soap12:operation soapAction="http://tempuri.org/IStudentService/PendingFees" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoOfStudents">
+      <soap12:operation soapAction="http://tempuri.org/IStudentService/NoOfStudents" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CountStudentsWithPendingFees">
+      <soap12:operation soapAction="http://tempuri.org/IStudentService/CountStudentsWithPendingFees" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentsByFirstName">
+      <soap12:operation soapAction="http://tempuri.org/IStudentService/GetStudentsByFirstName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_IStaffService" type="tns:IStaffService">
+    <wsp:PolicyReference URI="#NetTcpBinding_IStaffService_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="GetAllStaffs">
+      <soap12:operation soapAction="http://tempuri.org/IStaffService/GetAllStaffs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStaff">
+      <soap12:operation soapAction="http://tempuri.org/IStaffService/GetStaff" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddStaff">
+      <soap12:operation soapAction="http://tempuri.org/IStaffService/AddStaff" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStaff">
+      <soap12:operation soapAction="http://tempuri.org/IStaffService/DeleteStaff" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStaff">
+      <soap12:operation soapAction="http://tempuri.org/IStaffService/UpdateStaff" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoOfStaffs">
+      <soap12:operation soapAction="http://tempuri.org/IStaffService/NoOfStaffs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_IFeesService" type="tns:IFeesService">
+    <wsp:PolicyReference URI="#NetTcpBinding_IFeesService_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="GetAllFees">
+      <soap12:operation soapAction="http://tempuri.org/IFeesService/GetAllFees" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StudentAllFees">
+      <soap12:operation soapAction="http://tempuri.org/IFeesService/StudentAllFees" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddFees">
+      <soap12:operation soapAction="http://tempuri.org/IFeesService/AddFees" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_IRoomService" type="tns:IRoomService">
+    <wsp:PolicyReference URI="#NetTcpBinding_IRoomService_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="GetAllRooms">
+      <soap12:operation soapAction="http://tempuri.org/IRoomService/GetAllRooms" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoom">
+      <soap12:operation soapAction="http://tempuri.org/IRoomService/GetRoom" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddRoom">
+      <soap12:operation soapAction="http://tempuri.org/IRoomService/AddRoom" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRoom">
+      <soap12:operation soapAction="http://tempuri.org/IRoomService/UpdateRoom" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRoom">
+      <soap12:operation soapAction="http://tempuri.org/IRoomService/DeleteRoom" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVacantRoomIds">
+      <soap12:operation soapAction="http://tempuri.org/IRoomService/GetVacantRoomIds" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVacantRoomIdsWithAC">
+      <soap12:operation soapAction="http://tempuri.org/IRoomService/GetVacantRoomIdsWithAC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVacantRoomIdsWithNonAC">
+      <soap12:operation soapAction="http://tempuri.org/IRoomService/GetVacantRoomIdsWithNonAC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoOfRooms">
+      <soap12:operation soapAction="http://tempuri.org/IRoomService/NoOfRooms" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalVacantRooms">
+      <soap12:operation soapAction="http://tempuri.org/IRoomService/GetTotalVacantRooms" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentsInRoom">
+      <soap12:operation soapAction="http://tempuri.org/IRoomService/GetStudentsInRoom" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="StudentService">
+    <wsdl:port name="NetTcpBinding_IStudentService" binding="tns:NetTcpBinding_IStudentService">
+      <soap12:address location="net.tcp://localhost:8000/TcpBinding" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8000/TcpBinding</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>PAVILION-15\hp</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:service name="StaffService">
+    <wsdl:port name="NetTcpBinding_IStaffService" binding="tns:NetTcpBinding_IStaffService">
+      <soap12:address location="net.tcp://localhost:8001/StaffTcpBinding" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8001/StaffTcpBinding</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>PAVILION-15\hp</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:service name="FeesService">
+    <wsdl:port name="NetTcpBinding_IFeesService" binding="tns:NetTcpBinding_IFeesService">
+      <soap12:address location="net.tcp://localhost:8003/FeesTcpBinding" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8003/FeesTcpBinding</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>PAVILION-15\hp</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:service name="RoomService">
+    <wsdl:port name="NetTcpBinding_IRoomService" binding="tns:NetTcpBinding_IRoomService">
+      <soap12:address location="net.tcp://localhost:8002/RoomTcpBinding" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8002/RoomTcpBinding</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>PAVILION-15\hp</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
